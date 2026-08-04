@@ -1,2 +1,6 @@
 # adso3564995
-Lorem ipsum dolor sit amet
+![Profile Picture]()
+## Jeronimo Acosta Ocampo
+### Analisis y Desarrollo de Software
+***Centro de Procesos Industriales y Construccion***
+---
