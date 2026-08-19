@@ -3,7 +3,7 @@
  
 /* Styles */
 body {
-    background: linear-gradient(to top, #738678, #2c332e);
+    background: linear-gradient(to top, #5e6c62, #2c332e);
     color: #fff9;
     font-family: Poppins;
     min-height: 100dvh;
@@ -89,8 +89,12 @@ body {
                         color: #fff9;
                     }
                 }
+                        margin: 0;
+                    }
+                    small {
+                        font-size: 0.6rem;
  
-                span {
+                span  {
                     align-items: center;
                     display: flex;
                     font-size: 1.8rem;
@@ -111,11 +115,7 @@ body {
                     align-items: start;
                     h4 {
                         font-size: 1.6rem;
-                        font-weight: 500;
-                        margin: 0;
-                    }
-                    small {
-                        font-size: 0.6rem;
+                        font-weight: 5;
                         color: #fff4;
                     }
                 }
