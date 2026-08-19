@@ -4,6 +4,22 @@
 /* Styles */
 body {
     background: linear-gradient(180grad, #374448, #6c9178);
+    color: #eddcb9aa;
+    &.emmet{
+        background: linear-gradient(180grad, #7acb16, #192a05);
+       color: #baffa9aa;
+    
+       main {
+        header.mmenu {
+            h1 {
+                border-bottom: 2px solid #baffa9aa;
+            }
+        }
+        img {
+            border: 4px solid #baffa9aa;
+        }
+       }
+    }
     color: #fff9;
     font-family: Poppins;
     min-height: 100dvh;
