@@ -10,7 +10,7 @@
 |01. |Emmet      |Workflow - Markup & Styling               |
 |02. |HTML       |Structure - Hypertext Markup Language     |
 |03. |CSS        |Look & Feel - Cascading Style Sheets      |
-|04. |JavaScript |Behavior - Progaming Language (Vanilla)  |
+|04. |JavaScript |Behavior - Progaming Language (Vanilla)   |
 
 ---
 ### links
