@@ -5,6 +5,7 @@
 body {
     background: linear-gradient(180grad, #374448, #6c9178);
     color: #eddcb9aa;
+    
     &.emmet{
         background: linear-gradient(180grad, #7acb16, #192a05);
        color: #baffa9aa;
@@ -21,7 +22,7 @@ body {
        }
     }
 
-nav.goback { 
+  nav.goback { 
     align-items: center;
     border-radius: 50%;
     border: 2px solid #fff;
