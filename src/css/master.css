@@ -5,9 +5,49 @@
 body {
     background: linear-gradient(180grad, #374448, #6c9178);
     color: #eddcb9aa;
-    
+
+     &.html {
+        background: linear-gradient(to top, #ff0000, #ed8255);
+        background-attachment: fixed;
+        color: #f9966baa;
+        main {
+            header.mmenu {
+                h1 {
+                    border-bottom: 2px solid #f9966baa;
+                }
+                img {
+                    border: 4px solid #f9966baa;
+                }
+            }
+           menu.mmenu {
+                a:is(:link, :visited) {
+                    &:hover {
+                        background-color: #ff0000;
+                        aside {
+                            h4 {
+                                color: #fff9;
+                            }
+                        }
+                    }
+                    span {
+                        background-color: #ff0000;
+                        height: 50px;
+                        font-size: 1.4rem;
+                        width: 50px;
+                        color: #fff9;
+                    }
+                    aside {
+                        h4 {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+           } 
+        }
+    }
+
     &.emmet{
-        background: linear-gradient(180grad, #7acb16, #192a05);
+        background: linear-gradient(180grad, #7acb16, #a3c37f);
        color: #baffa9aa;
     
        main {
