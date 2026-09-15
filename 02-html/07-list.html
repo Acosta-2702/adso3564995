@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>00-Template</title>
+    <title>07-Lists</title>
     <link rel="stylesheet" href="../src/css/master.css">
 </head>
 <body class="html">
@@ -16,12 +16,36 @@
     </nav>
     <main>
         <header class="mmenu internal">
-            <h1>00-Template</h1>
+            <h1>07-Lists</h1>
             <img src="../src/images/logo-html.png" alt="Html">
-            <h3>Description</h3>
+            <h3>Creates ordered and unordered lists.</h3>
         </header>
         <section>
-           <h3 class="subtitle">Subtitle:</h3>
+           <h3 class="subtitle">Ordered list (ol):</h3>
+           <ol type="A">
+            <li>Formula 1</li>
+            <li>Futbol
+                <ol type="i">
+                    <li>Messi</li>
+                    <li>Cristiano Ronaldo</li>
+                    <Li>Ronaldinho</Li>
+                </ol>
+            </li>
+            <li>Tennis</li>
+           </ol>
+           <h3 class="subtitle">Unordered List (ul):</h3>
+           <ul>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>C#</li>
+            <li>Javascript
+                <ul>
+                    <li>React JS</li>
+                    <li>Vue JS</li>
+                    <li>Angular JS</li>
+                </ul>
+            </li>
+           </ul>
         </section>
     </main>
 </body>

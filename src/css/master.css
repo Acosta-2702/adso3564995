@@ -45,6 +45,11 @@ body {
                         }
                     }
                 }
+           }
+           section {
+            p, ul, ol {
+                color: #fff9;
+              }
            } 
         }
     }
