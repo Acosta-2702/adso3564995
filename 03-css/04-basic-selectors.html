@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>04-Basic Selectors</title>
     <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        section#sec01 {
+            div {
+                color: #ba82f3;
+                margin-block: 4rem;
+                text-align: center;
+                &.uppercase { text-transform: uppercase; }
+                &.txt-lg    { font-size: 5rem; }
+                &.rotate45  { transform: rotate(-45deg); }
+            }
+        }
+    </style>
 </head>
 <body class="css">
     <nav class="goback">
@@ -18,10 +30,20 @@
         <header class="mmenu internal">
             <h1>04-Basic Selectors</h1>
             <img src="../src/images/logo-css.png" alt="Css">
-            <h3></h3>
+            <h3>Target HTML elements by type, class, or ID.</h3>
+            <ul>
+                <li>Universal (*)</li>
+                <li>Type / Tag (p)</li>
+                <li>Descending (div p)</li>
+                <li>Class (.important)</li>
+                <li>ID (#cod389)</li>
+                <li>Merge (div#user3 p.title)</li>
+                <li>Grouping (div, p)</li>
+            </ul>
         </header>
-        <section>
-           <h3 class="subtitle">Subtitle:</h3>
+        <section id="sec01">
+           <h3 class="subtitle">Example:</h3>
+           <div class="uppercase txt-lg rotate45">adso</div>
         </section>
     </main>
 </body>
