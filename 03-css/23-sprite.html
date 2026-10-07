@@ -66,5 +66,20 @@
             }
         }, 100);
     </script>
+    <script>
+        const dino = document.getElementById("dino");
+        const dinoSprites = 2;
+        let countDino = 1;
+
+        setInterval(() => {
+            if(countDino == dinoSprites) {
+                dino.className = '';
+                countDino = 1;
+            } else {
+                dino.className = '';
+                dino.classList.add('sp' + ++countDino);
+            }
+        }, 80);
+    </script>
 </body>
 </html>
