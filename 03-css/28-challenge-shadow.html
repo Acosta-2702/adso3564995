@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28-Challenge Shadow</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        figure.frame {
+            outline: 20px solid #fff;
+            background: linear-gradient(to top, #663399, #dbb6ff);
+            height: calc(38 * 20px); 
+            width:  calc(29 * 20px);
+            margin: 2rem auto;
+            zoom: 0.50;
+            transition: all 0.2s ease-in;
+            &:hover {
+                transform: scale(1.6);
+            }
+        }
+        div.squares {
+            background: url(imgs/square.png);
+            opacity: 0.5;
+            z-index: 2;
+            margin-top: -20px;
+            height: calc(38 * 20px);
+        }
+        div.deadpool {
+            background-color: #fff;
+            height: 20px;
+            width: 20px;
+            box-shadow:   0px 0 0 0 #fff,
+                         20px 0 0 0 #fff,
+                         40px 0 0 0 #fff,
+                         60px 0 0 0 #fff,
+                         80px 0 0 0 #fff,
+                         100px 0 0 0 #fff,
+                         120px 0 0 0 #fff,
+                         140px 0 0 0 #fff,
+                         160px 0 0 0 #fff,
+                         180px 0 0 0 #fff,
+                         200px 0 0 0 #fff,
+                         220px 0 0 0 #fff,
+                         240px 0 0 0 #fff,
+                         260px 0 0 0 #fff,
+                         280px 0 0 0 #fff,
+                         300px 0 0 0 #fff,
+                         320px 0 0 0 #fff,
+                         340px 0 0 0 #fff,
+                         360px 0 0 0 #fff,
+                         380px 0 0 0 #fff,
+                         400px 0 0 0 #fff,
+                         420px 0 0 0 #fff,
+                         440px 0 0 0 #fff,
+                         460px 0 0 0 #fff,
+                         480px 0 0 0 #fff,
+                         500px 0 0 0 #fff,
+                         520px 0 0 0 #fff,
+                         540px 0 0 0 #fff,
+                         560px 0 0 0 #fff;
+        }
+</style>
+</head>
+<body class="css">
+    <nav class="goback">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256">
+                <path d="M208,72H128V32a8,8,0,0,0-13.66-5.66l-96,96a8,8,0,0,0,0,11.32l96,96A8,8,0,0,0,128,224V184h80a16,16,0,0,0,16-16V88A16,16,0,0,0,208,72Zm0,96H120a8,8,0,0,0-8,8v28.69L35.31,128,112,51.31V80a8,8,0,0,0,8,8h88Z"></path>
+            </svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mmenu internal">
+            <h1>28-Challenge Shadow</h1>
+            <img src="../src/images/logo-css.png" alt="Css">
+            <h3>Pixel Art (deadpool)</h3>
+        </header>
+        <section>
+          <figure class="frame">
+                <div class="deadpool"></div>
+                <div class="squares"></div>
+            </figure>
+        </section>
+    </main>
+</body>
+</html>
