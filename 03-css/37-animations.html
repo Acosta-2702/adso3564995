@@ -25,10 +25,54 @@
                     &.logo {
                         top: 34px;
                         left: 24px;
-                        animation: ;
+                        animation: 2.8s animLogo infinite ease;
+                    }
+                    &.dk {
+                        top: 170px;
+                        left: 110px;
+                        width: 140px;
+                        animation: 2s animDK infinite ease;
+                    }
+                    &.move {
+                        top: 90px;
+                        left: 0px;
+                        animation: 2s animAttack infinite ease-out;
+
+                        img.ryno {
+                            width: 120px;
+                            animation: 0.25s animRyno infinite ease-in;
+                            
+                        }
                     }
                 }
             }
+        }
+        @keyframes animLogo {
+            0%, 100% {
+                transform: scale(.8);
+            }
+            50% {
+                transform: scale(1.12);
+            }
+        }
+
+        @keyframes animDK {
+            0%   { transform: scale(1) rotateX(0deg); top: 170px    }
+            48%  { transform: scale(.75) rotateX(0deg); top: 70px   }
+            52%  { transform: scale(.75) rotateX(180deg); top: 70px }
+            56%  { transform: scale(.75) rotateX(0deg); top: 70px   }
+            70%  { transform: scale(1) rotateX(0deg); top: 170px    }
+            100% { transform: scale(1) rotateX(0deg); top: 170px    }
+        }
+
+        @keyframes animRyno {
+            0%, 100% { transform: translateY(0);     }
+            50%      { transform: translateY(-12px); }
+        }
+
+        @keyframes animAttack {
+            0% { transform: rotateY(180deg); top: 90px; left: 0px; }
+            50% { transform: rotateY(110deg); top: 90px; left: 300px; }
         }
     </style>
 </head>
