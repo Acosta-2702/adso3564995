@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bajoterra</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(imgs/fondobajoterra.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .logo {
+            background: url(imgs/Bajoterra.png) no-repeat center;
+            background-size: contain;
+            height: 120px;
+            width: 300px;
+            margin: 16px auto;
+        }
+
+        .contenedor {
+            width: 960px;
+            margin: 0 auto;
+            padding: 20px 0;
+            overflow: hidden;
+        }
+
+        .carta {
+            position: relative;
+            float: left;
+            width: 180px;
+            margin: 0 30px 30px 30px;
+            background-color: #000000;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+
+            &:hover .etiqueta {
+                transform: translateY(-20px);
+            }
+        }
+
+        .carta img {
+            display: block;
+            width: 100%;
+        }
+
+        .etiqueta {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 12px 16px;
+            background-color: #0000007e;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-align: center;
+            letter-spacing: 0.5px;
+            transition: transform 0.25s;
+        }
+
+        .bloque {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto 24px auto;
+            padding: 32px;
+            background-color: #0000007e;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .eli,
+        .kord,
+        .trixie,
+        .pronto {
+            position: relative;
+            float: left;
+            margin-right: 32px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .eli img,
+        .kord img,
+        .trixie img,
+        .pronto img {
+            display: block;
+            height: 185px;
+        }
+
+        .descripcion {
+            overflow: hidden;
+            font-size: 0.92rem;
+            color: #fff1c1;
+            line-height: 1.65;
+            text-align: justify;
+            transition: color 0.2s;
+
+            &:hover {
+                color: #f28c1e;
+            }
+        }
+
+        @media (max-width: 1023px) {
+            .contenedor {
+                width: 480px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .contenedor {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .carta {
+                float: none;
+                width: 200px;
+                margin: 0 auto 30px auto;
+            }
+
+            .bloque {
+                padding: 24px;
+            }
+
+            .eli,
+            .kord,
+            .trixie,
+            .pronto {
+                float: none;
+                width: 150px;
+                margin: 0 auto 16px auto;
+            }
+
+            .eli img,
+            .kord img,
+            .trixie img,
+            .pronto img {
+                height: 150px;
+            }
+
+            .descripcion {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="logo"></div>
+        <div class="contenedor">
+            <div class="carta">
+                <img src="imgs/Eli shane.jpg" alt="Eli Shane" />
+                <div class="etiqueta">Eli</div>
+            </div>
+            <div class="carta">
+                <img src="imgs/Kord.jpg" alt="Kord" />
+                <div class="etiqueta">Kord</div>
+            </div>
+            <div class="carta">
+                <img src="imgs/trixie.jpg" alt="Trixie" />
+                <div class="etiqueta">Trixie</div>
+            </div>
+            <div class="carta">
+                <img src="imgs/pronto.jpg" alt="Pronto" />
+                <div class="etiqueta">Pronto</div>
+            </div>
+        </div>
+        <div class="bloque">
+            <div class="eli">
+                <img src="imgs/Eli shane.jpg" alt="Eli Shane" />
+                <div class="etiqueta">Eli</div>
+            </div>
+            <div class="descripcion">
+                Eli Shane es el protagonista de Bajoterra. Llegó desde la superficie y, cuando su padre, Will Shane, desaparece, se convierte en el nuevo protector de Bajoterra. Es un lanzador de babosas valiente y decidido que lidera a la Banda de Shane, el grupo de amigos con el que se enfrenta al Dr. Blakk para proteger el mundo subterráneo.
+            </div>
+        </div>
+        <div class="bloque">
+            <div class="kord">
+                <img src="imgs/Kord.jpg" alt="Kord" />
+                <div class="etiqueta">Kord</div>
+            </div>
+            <div class="descripcion">
+                Kord Zane es un trol de las cavernas, enorme y muy fuerte, que forma parte de la Banda de Shane. Es el mecánico del equipo: arregla los mechas y mejora los blásters de sus amigos. Le encanta hacer bromas pesadas, sobre todo a Pronto, pero detrás de su aspecto rudo tiene un gran corazón.
+            </div>
+        </div>
+        <div class="bloque">
+            <div class="trixie">
+                <img src="imgs/Trixie.jpg" alt="Trixie" />
+                <div class="etiqueta">Trixie</div>
+            </div>
+            <div class="descripcion">
+                Trixie Sting es la experta en babosas de la Banda de Shane. Es una chica valiente e inteligente que graba videos de sus aventuras, y su gran sueño es hacer un documental para demostrarle a todo Bajoterra que las babosas tienen sentimientos y una sociedad propia.
+            </div>
+        </div>
+        <div class="bloque">
+            <div class="pronto">
+                <img src="imgs/Pronto.jpg" alt="Pronto" />
+                <div class="etiqueta">Pronto</div>
+            </div>
+            <div class="descripcion">
+                Pronto es un topoide, una criatura parecida a un topo con rasgos humanos, y fue el primer miembro de la Banda de Shane. No tiene el liderazgo de Eli, la fuerza de Kord ni la inteligencia de Trixie, pero es un gran rastreador y un excelente excavador, siempre listo para guiar al equipo bajo tierra.
+            </div>
+        </div>
+    </main>
+</body>
+</html>
