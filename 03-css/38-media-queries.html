@@ -72,6 +72,72 @@
                 }
             }
         }
+
+        /* Media Queries */
+
+        /* Breakpoint: 1288px */
+        @media (max-width: 1288px) {
+            body {
+                main {
+                    width: 800px;
+                    header {
+                        figure.logo {
+                            background: url(imgs/pepsi02.png) no-repeat center;
+                            height: 370px;
+                            width: 348px;
+                        }
+                        menu {
+                            a:is(:link, :visited) {
+                                width: 124px;
+                            }
+                        }
+                    }
+                    section {
+                        h2{
+                            &:nth-of-type(2) {
+                                display: none;
+                            }
+                            &:last-of-type {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Breakpoint: 860px */
+        @media (max-width: 860px) {
+            body {
+                main {
+                    width: 360px;
+                    header {
+                        figure.logo {
+                            background: url(imgs/pepsi03.png) no-repeat center;
+                            height: 156px;
+                            width: 162px;
+                        }
+                        menu {
+                            a:is(:link, :visited) {
+                                display: block;
+                                margin-bottom: 0.4rem;
+                                width: 330px;
+                            }
+                        }
+                    }
+                    section {
+                        h2{
+                            &:first-of-type {
+                                display: none;
+                            }
+                            &:nth-of-type(2) {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     </style>
 </head>
 <body>
