@@ -9,6 +9,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            transition: all 0.4s ease;
         }
 
         body {
@@ -17,152 +18,163 @@
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            font-family: 'Roboto', sans-serif;
-        }
+            font-family: sans-serif;
+            color: #fff;
 
-        .logo {
-            background: url(imgs/Bajoterra.png) no-repeat center;
-            background-size: contain;
-            height: 120px;
-            width: 300px;
-            margin: 16px auto;
-        }
+            main {
+                width: 1000px;
+                margin: 0 auto;
+                padding: 1rem;
 
-        .contenedor {
-            width: 960px;
-            margin: 0 auto;
-            padding: 20px 0;
-            overflow: hidden;
-        }
+                header {
+                    figure.logo {
+                        background: url(imgs/Bajoterra.png) no-repeat center;
+                        background-size: contain;
+                        height: 160px;
+                        width: 400px;
+                        margin: 0 auto;
+                    }
+                }
 
-        .carta {
-            position: relative;
-            float: left;
-            width: 180px;
-            margin: 0 30px 30px 30px;
-            background-color: #000000;
-            border-radius: 12px;
-            overflow: hidden;
-            transition: transform 0.3s;
+                .etiqueta {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: 12px 16px;
+                    background-color: #00000066;
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    text-align: center;
+                    letter-spacing: 0.5px;
+                }
 
-            &:hover {
-                transform: scale(1.03);
-            }
+                .contenedor {
+                    width: 960px;
+                    margin: 0 auto;
+                    padding: 20px 0;
+                    overflow: hidden;
 
-            &:hover .etiqueta {
-                transform: translateY(-20px);
-            }
-        }
+                    .carta {
+                        position: relative;
+                        float: left;
+                        width: 180px;
+                        margin: 0 30px 30px 30px;
+                        background-color: #000;
+                        border-radius: 12px;
+                        overflow: hidden;
 
-        .carta img {
-            display: block;
-            width: 100%;
-        }
+                        img {
+                            display: block;
+                            width: 100%;
+                        }
 
-        .etiqueta {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            padding: 12px 16px;
-            background-color: #00000066;
-            color: #ffffff;
-            font-weight: 700;
-            font-size: 1.1rem;
-            text-align: center;
-            letter-spacing: 0.5px;
-            transition: transform 0.25s;
-        }
+                        &:hover {
+                            transform: scale(1.03);
 
-        .bloque {
-            width: 90%;
-            max-width: 1000px;
-            margin: 0 auto 24px auto;
-            padding: 32px;
-            background-color: #00000080;
-            border-radius: 12px;
-            overflow: hidden;
-        }
+                            .etiqueta {
+                                transform: translateY(-20px);
+                            }
+                        }
+                    }
+                }
 
-        .eli,
-        .kord,
-        .trixie,
-        .pronto {
-            position: relative;
-            float: left;
-            margin-right: 32px;
-            border-radius: 12px;
-            overflow: hidden;
-        }
+                .bloque {
+                    margin-bottom: 24px;
+                    padding: 32px;
+                    background-color: #00000080;
+                    border-radius: 12px;
+                    overflow: hidden;
 
-        .eli img,
-        .kord img,
-        .trixie img,
-        .pronto img {
-            display: block;
-            height: 185px;
-        }
+                    .eli,
+                    .kord,
+                    .trixie,
+                    .pronto {
+                        position: relative;
+                        float: left;
+                        margin-right: 32px;
+                        border-radius: 12px;
+                        overflow: hidden;
 
-        .descripcion {
-            overflow: hidden;
-            font-size: 0.92rem;
-            color: #fff1c1;
-            line-height: 1.65;
-            text-align: justify;
-            transition: color 0.2s;
+                        img {
+                            display: block;
+                            height: 185px;
+                        }
+                    }
 
-            &:hover {
-                color: #f28c1e;
+                    .descripcion {
+                        overflow: hidden;
+                        font-size: 0.92rem;
+                        color: #fff1c1;
+                        line-height: 1.65;
+                        text-align: justify;
+
+                        &:hover {
+                            color: #f28c1e;
+                        }
+                    }
+                }
             }
         }
 
         @media (max-width: 1023px) {
-            .contenedor {
-                width: 480px;
+            body {
+                main {
+                    width: 700px;
+
+                    .contenedor {
+                        width: 480px;
+                    }
+                }
             }
         }
 
         @media (max-width: 767px) {
-            .contenedor {
-                width: 100%;
-                padding: 15px;
-            }
+            body {
+                main {
+                    width: 100%;
 
-            .carta {
-                float: none;
-                width: 200px;
-                margin: 0 auto 30px auto;
-            }
+                    .contenedor {
+                        width: 100%;
+                        padding: 15px;
 
-            .bloque {
-                padding: 24px;
-            }
+                        .carta {
+                            float: none;
+                            width: 200px;
+                            margin: 0 auto 30px auto;
+                        }
+                    }
 
-            .eli,
-            .kord,
-            .trixie,
-            .pronto {
-                float: none;
-                width: 150px;
-                margin: 0 auto 16px auto;
-            }
+                    .bloque {
+                        padding: 24px;
 
-            .eli img,
-            .kord img,
-            .trixie img,
-            .pronto img {
-                height: 150px;
-            }
+                        .eli,
+                        .kord,
+                        .trixie,
+                        .pronto {
+                            float: none;
+                            width: 150px;
+                            margin: 0 auto 16px auto;
 
-            .descripcion {
-                text-align: center;
+                            img {
+                                height: 150px;
+                            }
+                        }
+
+                        .descripcion {
+                            text-align: center;
+                        }
+                    }
+                }
             }
         }
     </style>
 </head>
 <body>
     <main>
-        <div class="logo"></div>
+        <header>
+            <figure class="logo"></figure>
+        </header>
         <div class="contenedor">
             <div class="carta">
                 <img src="imgs/Eli shane.jpg" alt="Eli Shane" />
