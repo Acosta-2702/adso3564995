@@ -28,7 +28,7 @@
                         background: url(imgs/pepsi01.png) no-repeat center;
                         padding: 0;
                         height: 354px;
-                        margin: 0;
+                        margin: 0 auto;
                         width: 919px;
                     }
 
@@ -94,10 +94,10 @@
                     }
                     section {
                         h2{
-                            &:nth-of-type(2) {
+                            &:first-of-type {
                                 display: none;
                             }
-                            &:last-of-type {
+                            &:nth-of-type(2) {
                                 display: block;
                             }
                         }
@@ -127,10 +127,10 @@
                     }
                     section {
                         h2{
-                            &:first-of-type {
+                            &:nth-of-type(2) {
                                 display: none;
                             }
-                            &:nth-of-type(2) {
+                            &:last-of-type {
                                 display: block;
                             }
                         }
