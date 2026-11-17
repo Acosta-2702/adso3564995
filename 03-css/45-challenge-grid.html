@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>45-Challenge Grid</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        section {
+          display: block;
+          }
+
+.gallery {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 140px);
+  grid-template-areas:
+    "one  two  three"
+    "four two  five"
+    "six  six  seven";
+}
+
+.gallery img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 3px solid #fff;
+  border-radius: 10px;
+}
+
+.one   { grid-area: one; }
+.two   { grid-area: two; }
+.three { grid-area: three; }
+.four  { grid-area: four; }
+.five  { grid-area: five; }
+.six   { grid-area: six; }
+.seven { grid-area: seven; }
+    </style>
+</head>
+<body class="css">
+    <nav class="goback">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256">
+                <path d="M208,72H128V32a8,8,0,0,0-13.66-5.66l-96,96a8,8,0,0,0,0,11.32l96,96A8,8,0,0,0,128,224V184h80a16,16,0,0,0,16-16V88A16,16,0,0,0,208,72Zm0,96H120a8,8,0,0,0-8,8v28.69L35.31,128,112,51.31V80a8,8,0,0,0,8,8h88Z"></path>
+            </svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mmenu internal">
+            <h1>45-Challenge Grid</h1>
+            <img src="../src/images/logo-css.png" alt="Css">
+            <h3>Grid Areas: Irregular Gallery.</h3>
+        </header>
+        <section>
+           <h3 class="subtitle">Gallery:</h3>
+
+          <div class="gallery">
+              <img src="imgs/ani01.png" alt="Imagen 1" class="one">
+              <img src="imgs/ani02.png" alt="Imagen 2" class="two">
+              <img src="imgs/ani03.png" alt="Imagen 3" class="three">
+              <img src="imgs/ani04.png" alt="Imagen 4" class="four">
+              <img src="imgs/ani05.png" alt="Imagen 5" class="five">
+              <img src="imgs/ani06.png" alt="Imagen 6" class="six">
+              <img src="imgs/ani07.png" alt="Imagen 7" class="seven">
+           </div>
+           </section>
+    </main>
+</body>
+</html>
